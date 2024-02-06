@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Article preview component</title>
+
+    <link rel="stylesheet" href="style/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script defer src="shareButton.js"></script>
+  </head>
+  <body
+    class="text-[#6d7f97] bg-[#ecf2f8] font-medium text-xs font-['Manrope'] grid place-items-center min-h-screen xl:text-sm"
+  >
+    <div
+      class="w-64 grid bg-[#ffffff] rounded-xl xl:grid-cols-2 xl:w-[800px] xl:h-[320px]"
+    >
+      <div>
+        <img
+          class="rounded-t-xl xl:rounded-l-xl xl:rounded-e-none"
+          src="./images/drawers.jpg"
+          alt="drawers"
+        />
+      </div>
+      <div class="flex flex-col gap-5 p-5 xl:p-8 xl:gap-8">
+        <h1 class="text-sm text-[#1f242e] font-bold xl:text-base">
+          Shift the overall look and feel by adding these wonderful touches to
+          furniture in your home
+        </h1>
+        <p class="leading-relaxed">
+          Ever been in a room and felt like something was missing? Perhaps it
+          felt slightly bare and uninviting. I’ve got some simple tips to help
+          you make any room feel complete.
+        </p>
+        <div id="button-click" class="block">
+          <div class="flex justify-between items-center">
+            <div class="flex gap-3">
+              <img
+                class="w-10 aspect-square rounded-full"
+                src="./images/avatar-michelle.jpg"
+                alt="avatar-michelle"
+              />
+              <div class="flex flex-col justify-around">
+                <h2 class="text-[#1f242e] font-bold">Michelle Appleton</h2>
+                <p>28 Jun 2020</p>
+              </div>
+            </div>
+            <div
+              class="p-2 aspect-square bg-[#ecf2f8] rounded-full cursor-pointer share-buttons xl:pointer-events-none xl:hidden"
+            >
+              <img src="./images/icon-share.svg" alt="share icon" />
+            </div>
+            <div
+              class="p-2 aspect-square bg-[#ecf2f8] rounded-full cursor-pointer hidden xl:block group relative hover:bg-[#5d6d89] duration-200"
+            >
+              <img
+                class="group-hover:hidden"
+                src="./images/icon-share.svg"
+                alt="share icon"
+              />
+
+              <img
+                class="group-hover:block hidden"
+                src="./images/icon-share-white.svg"
+                alt="share icon"
+              />
+
+              <div
+                class="group-hover:block hidden absolute bg-[#48556a] -top-14 -left-[75px] w-[195px] py-3 px-5 rounded-lg z-10"
+              >
+                <div class="flex gap-3 items-center">
+                  <p class="uppercase text-[#9eafc2] text-xs tracking-[0.3em]">
+                    Share
+                  </p>
+                  <div class="flex gap-3">
+                    <img
+                      class="w-5 aspect-square"
+                      src="./images/icon-facebook.svg"
+                      alt=""
+                    />
+                    <img
+                      class="w-5 aspect-square"
+                      src="./images/icon-twitter.svg"
+                      alt=""
+                    />
+                    <img
+                      class="w-5 aspect-square"
+                      src="./images/icon-pinterest.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="group-hover:block hidden absolute text-transparent -top-[26px] -left-1 border-t-[25px] border-t-[#48556a] border-r-[20px] border-r-transparent border-l-[20px] border-l-transparent border-solid cursor-pointer"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="button-clicked" class="hidden">
+        <div
+          class="flex justify-between items-center bg-[#48556a] px-5 py-3 rounded-b-xl"
+        >
+          <div class="flex gap-3">
+            <p class="uppercase text-[#9eafc2] text-sm tracking-[0.3em]">
+              Share
+            </p>
+            <div class="flex gap-3">
+              <img
+                class="cursor-pointer"
+                src="./images/icon-facebook.svg"
+                alt=""
+              />
+              <img
+                class="cursor-pointer"
+                src="./images/icon-twitter.svg"
+                alt=""
+              />
+              <img
+                class="cursor-pointer"
+                src="./images/icon-pinterest.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div
+            class="p-2 aspect-square bg-[#6d7f97] rounded-full cursor-pointer share-buttons"
+          >
+            <img src="./images/icon-share-white.svg" alt="share icon" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
